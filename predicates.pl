@@ -57,3 +57,6 @@ common_country(Movie1, Movie2, Country) :- country(Movie1, Country), country(Mov
 
 %for same decade
 same_decade(Movie1, Movie2, Decade) :- decade(Movie1, Decade), decade(Movie2, Decade), Movie1 \= Movie2.
+
+%for same score 
+same_score(Movie1, Movie2, Score) :- score(Movie1, Score), score(Movie2, Score), Movie1 \= Movie2.
