@@ -40,7 +40,7 @@ at_least_three_common_actors(Movie1, Movie2) :- common_actor(Movie1, Movie2, Act
 same_language(Movie1, Movie2) :- language(Movie1, Language), language(Movie2, Language), Movie1 \\= Movie2.
 
 %for black and white movies | if it is black and white its not colored and vice versa
-black_and_white(Movie) :- plot_keyword(Movie, "black_and_white").
+black_and_white(Movie) :- color(Movie, "black_and_white").
 
 %for common production company
 common_production_company(Movie1, Movie2, Company) :- production_company(Movie1, Company), production_company(Movie2, Company), Movie1 \\= Movie2.
